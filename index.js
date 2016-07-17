@@ -13,12 +13,12 @@ const colors = [
   foregroundColor,
   '#788691',
   '#da9a83',
-  '#CDDEBD',
-  '#FAE9C8',
-  '#C3D5E6',
-  '#E3C5DD',
-  '#C3E0DF',
-  '#FFFFFF'
+  '#434E58',
+  '#616E79',
+  '#B6BBC6',
+  '#E5E7ED',
+  '#BA8C7A',
+  '#F2F4F7'
 ]
 
 exports.decorateConfig = (config) => {
