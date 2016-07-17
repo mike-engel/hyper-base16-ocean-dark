@@ -1,6 +1,6 @@
 {
   "name": "hyperterm-base16-ocean-dark",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A Base 16 Ocean Hypeterm theme plugin",
   "main": "index.js",
   "scripts": {
