@@ -10,7 +10,8 @@
     "hyperterm",
     "base16",
     "ocean",
-    "theme"
+    "theme",
+    "hyperterm+theme"
   ],
   "author": "Mike Engel <mike@mike-engel.com>",
   "license": "MIT"
