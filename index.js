@@ -53,6 +53,10 @@ exports.decorateConfig = (config) => {
     css: `
       ${config.css || ''}
 
+      .cursor-node {
+        mix-blend-mode: difference !important;
+      }
+
       .header_header {
         background-color: ${black} !important;
       }
@@ -84,16 +88,4 @@ exports.decorateConfig = (config) => {
       }
     `
   })
-}
-
-exports.middleware = () => (next) => (action) => {
-  switch (action.type) {
-    case 'CONFIG_LOAD':
-    case 'CONFIG_RELOAD':
-      return next(Object.assign({}, action, {
-        config: exports.decorateConfig(action.config)
-      }))
-    default:
-      return next(action)
-  }
 }
