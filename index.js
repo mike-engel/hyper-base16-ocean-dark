@@ -53,10 +53,6 @@ exports.decorateConfig = (config) => {
     css: `
       ${config.css || ''}
 
-      .cursor-node {
-        mix-blend-mode: difference !important;
-      }
-
       .header_header {
         background-color: ${black} !important;
       }
@@ -85,6 +81,13 @@ exports.decorateConfig = (config) => {
       .tab_hasActivity {
         color: ${rust} !important;
         font-weight: 700 !important;
+      }
+    `,
+    termCSS: `
+      ${config.termCSS || ''}
+
+      .cursor-node {
+        mix-blend-mode: difference !important;
       }
     `
   })
