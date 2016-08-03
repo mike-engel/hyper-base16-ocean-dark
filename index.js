@@ -1,3 +1,4 @@
+const black = '#1F232C'
 const gray0 = '#2B303B'
 const gray1 = '#343D46'
 const gray2 = '#4F5B66'
@@ -16,7 +17,7 @@ const orange = '#D08770'
 const rust = '#AB7967'
 
 const colors = {
-  black: gray2,
+  black: gray0,
   red,
   green,
   yellow,
@@ -24,13 +25,13 @@ const colors = {
   magenta,
   cyan,
   white: gray6,
-  lightBlack: gray3,
-  lightRed: orange,
-  lightGreen: gray1,
-  lightYellow: gray2,
-  lightBlue: gray5,
-  lightMagenta: gray6,
-  lightCyan: rust,
+  lightBlack: gray2,
+  lightRed: red,
+  lightGreen: orange,
+  lightYellow: yellow,
+  lightBlue: blue,
+  lightMagenta: magenta,
+  lightCyan: cyan,
   lightWhite: gray7
 }
 
@@ -52,18 +53,47 @@ exports.decorateConfig = (config) => {
     css: `
       ${config.css || ''}
 
+      .header_header {
+        background-color: ${black} !important;
+      }
+
+      .tabs_title {
+        background-color: ${gray0} !important;
+      }
+
+      .tabs_list {
+        border: none !important;
+      }
+
       .tab_tab {
-        border-bottom: 4px solid transparent !important;
-        transition: border-bottom-color 250ms !important;
+        background-color: ${black} !important;
+        transition: background-color 200ms !important;
       }
 
       .tab_tab.tab_active {
-        border-bottom-color: ${gray6} !important;
+        background-color: ${gray0} !important;
       }
 
-      .hasActivity {
-        color: ${magenta} !important;
+      .tab_active:before {
+        display: none !important;
+      }
+
+      .tab_hasActivity {
+        color: ${rust} !important;
+        font-weight: 700 !important;
       }
     `
   })
+}
+
+exports.middleware = () => (next) => (action) => {
+  switch (action.type) {
+    case 'CONFIG_LOAD':
+    case 'CONFIG_RELOAD':
+      return next(Object.assign({}, action, {
+        config: exports.decorateConfig(action.config)
+      }))
+    default:
+      return next(action)
+  }
 }
