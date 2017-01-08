@@ -1,13 +1,13 @@
-# Base 16 Ocean: A HyperTerm theme
+# Base 16 Ocean: A Hyper theme
 
-A simple [base16 Ocean](https://chriskempson.github.io/base16/#ocean) theme for [HyperTerm](https://hyperterm.now.sh).
+A simple [base16 Ocean](https://chriskempson.github.io/base16/#ocean) theme for [Hyper](https://hyper.now.sh).
 
-![base16 ocean preview in hyperterm](https://raw.githubusercontent.com/mike-engel/hyperterm-base16-ocean-dark/master/screenshot.png)
+![base16 ocean preview in hyper](https://raw.githubusercontent.com/mike-engel/hyperterm-base16-ocean-dark/master/screenshot.png)
 
 ## Installation
 
-1. Open your HyperTerm settings. This can be done with either `cmd + ,` or editing `~/.hyperterm.js`.
-2. Add `hyperterm-base16-ocean-dark` to your `plugins` array, like so
+1. Open your Hyper settings. This can be done with either `cmd + ,` or editing `~/.hyper.js`.
+2. Add `hyper-base16-ocean-dark` to your `plugins` array, like so
 
 ```javascript
 plugins: [
@@ -15,6 +15,6 @@ plugins: [
 ]
 ```
 
-3. Reload HyperTerm. This can be done with `cmd + shift + r`, or click `Plugins > Update all now` from the menu bar.
+3. Reload Hyper. This can be done with `cmd + shift + r`, or click `Plugins > Update all now` from the menu bar.
 
 ## [License](LICENSE.md)

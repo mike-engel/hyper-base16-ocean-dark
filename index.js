@@ -36,20 +36,12 @@ const colors = {
 }
 
 exports.decorateConfig = (config) => {
-  const colorsArray = []
-
-  if (Array.isArray(config.colors)) {
-    for (let color in colors) {
-      if (colors.hasOwnProperty(color)) colorsArray.push(colors[color])
-    }
-  }
-
   return Object.assign({}, config, {
     backgroundColor: gray0,
     borderColor: gray0,
     foregroundColor: gray6,
     cursorColor: gray6,
-    colors: colorsArray.length ? colorsArray : colors,
+    colors: colors,
     css: `
       ${config.css || ''}
 
@@ -81,6 +73,10 @@ exports.decorateConfig = (config) => {
       .tab_hasActivity {
         color: ${rust} !important;
         font-weight: 700 !important;
+      }
+
+      .splitpane_divider {
+        background-color: ${gray3} !important;
       }
     `,
     termCSS: `
