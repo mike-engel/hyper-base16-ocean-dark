@@ -2,7 +2,7 @@
 
 A simple [base16 Ocean](https://chriskempson.github.io/base16/#ocean) theme for [Hyper](https://hyper.now.sh).
 
-![base16 ocean preview in hyper](https://raw.githubusercontent.com/mike-engel/hyperterm-base16-ocean-dark/master/screenshot.png)
+![base16 ocean preview in hyper](https://raw.githubusercontent.com/mike-engel/hyper-base16-ocean-dark/master/screenshot.png)
 
 ## Installation
 
@@ -11,7 +11,7 @@ A simple [base16 Ocean](https://chriskempson.github.io/base16/#ocean) theme for 
 
 ```javascript
 plugins: [
-  'hyperterm-base16-ocean-dark'
+  'hyper-base16-ocean-dark'
 ]
 ```
 
