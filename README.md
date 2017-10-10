@@ -17,4 +17,8 @@ plugins: [
 
 3. Reload Hyper. This can be done with `cmd + shift + r`, or click `Plugins > Update all now` from the menu bar.
 
-## [License](LICENSE.md)
+# [code of conduct](CODE_OF_CONDUCT.md)
+
+Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms.
+
+# [License](LICENSE.md)

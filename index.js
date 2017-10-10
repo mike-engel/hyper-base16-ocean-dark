@@ -1,20 +1,20 @@
-const black = '#1F232C'
-const gray0 = '#2B303B'
-const gray1 = '#343D46'
-const gray2 = '#4F5B66'
-const gray3 = '#65737E'
-const gray4 = '#A7ADBA'
-const gray5 = '#C0C5CE'
-const gray6 = '#DFE1E8'
-const gray7 = '#EFF1F5'
-const red = '#BF616A'
-const green = '#A3BE8C'
-const yellow = '#EBCB8B'
-const blue = '#8FA1B3'
-const magenta = '#B48EAD'
-const cyan = '#96B5B4'
-const orange = '#D08770'
-const rust = '#AB7967'
+const black = "#1F232C";
+const gray0 = "#2B303B";
+const gray1 = "#343D46";
+const gray2 = "#4F5B66";
+const gray3 = "#65737E";
+const gray4 = "#A7ADBA";
+const gray5 = "#C0C5CE";
+const gray6 = "#DFE1E8";
+const gray7 = "#EFF1F5";
+const red = "#BF616A";
+const green = "#A3BE8C";
+const yellow = "#EBCB8B";
+const blue = "#8FA1B3";
+const magenta = "#B48EAD";
+const cyan = "#96B5B4";
+const orange = "#D08770";
+const rust = "#AB7967";
 
 const colors = {
   black: gray0,
@@ -27,15 +27,15 @@ const colors = {
   white: gray6,
   lightBlack: gray2,
   lightRed: red,
-  lightGreen: orange,
+  lightGreen: green,
   lightYellow: yellow,
   lightBlue: blue,
   lightMagenta: magenta,
   lightCyan: cyan,
   lightWhite: gray7
-}
+};
 
-exports.decorateConfig = (config) => {
+exports.decorateConfig = config => {
   return Object.assign({}, config, {
     backgroundColor: gray0,
     borderColor: gray0,
@@ -43,7 +43,7 @@ exports.decorateConfig = (config) => {
     cursorColor: gray6,
     colors: colors,
     css: `
-      ${config.css || ''}
+      ${config.css || ""}
 
       .header_header {
         background-color: ${black} !important;
@@ -80,11 +80,11 @@ exports.decorateConfig = (config) => {
       }
     `,
     termCSS: `
-      ${config.termCSS || ''}
+      ${config.termCSS || ""}
 
       .cursor-node {
         mix-blend-mode: difference !important;
       }
     `
-  })
-}
+  });
+};
