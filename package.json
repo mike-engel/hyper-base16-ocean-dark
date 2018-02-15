@@ -1,6 +1,6 @@
 {
   "name": "hyper-base16-ocean-dark",
-  "version": "1.1.0",
+  "version": "1.4.0",
   "description": "A Base 16 Ocean Hyper theme plugin",
   "main": "index.js",
   "scripts": {
