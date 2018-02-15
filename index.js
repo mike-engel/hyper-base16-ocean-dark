@@ -1,3 +1,6 @@
+// Should match color definitions on the oficial base16-shell repo
+// https://github.com/chriskempson/base16-shell/blob/master/scripts/base16-ocean.sh
+
 const black = "#1F232C";
 const gray0 = "#2B303B";
 const gray1 = "#343D46";
@@ -13,7 +16,6 @@ const yellow = "#EBCB8B";
 const blue = "#8FA1B3";
 const magenta = "#B48EAD";
 const cyan = "#96B5B4";
-const orange = "#D08770";
 const rust = "#AB7967";
 
 const colors = {
@@ -24,8 +26,8 @@ const colors = {
   blue,
   magenta,
   cyan,
-  white: gray6,
-  lightBlack: gray2,
+  white: gray5,
+  lightBlack: gray3,
   lightRed: red,
   lightGreen: green,
   lightYellow: yellow,
